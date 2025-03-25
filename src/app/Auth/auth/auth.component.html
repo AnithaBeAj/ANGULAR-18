@@ -1,0 +1,25 @@
+<section>
+    <div class="form___group">
+        <form [formGroup]="myForm" (ngSubmit)="submit()">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" id="name">
+            @if(myForm.get('name')?.touched && myForm.get('name')?.hasError('required')){
+<p>                Name is Required
+</p>
+            }
+            
+            <label for="email">Email</label>
+            <input type="text" formControlName="email" id="email">
+            <!-- <div *ngIf="myForm.get(email)?.touched && myForm.get(email)?.hasError(required)">Email is required</div> -->
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</section>
+<section>
+    <label>first Name</label>
+    <input type="text" [(ngModel)] ="userName" name="userName" id="userName" > 
+    <button (click)="submitValue()">Submit</button>
+    @if(showUserName){
+        <p>User Name: {{userName}}</p>
+    }
+</section>

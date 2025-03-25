@@ -1,0 +1,31 @@
+.sigUp___form{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    .heading{
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .form__container{
+
+    }
+    .form-group{
+        display: inline-flex;
+        text-align: center;
+        input{
+            padding: 5px 50px;
+            width: -webkit-fill-available;
+            background: white;
+            border: 2px solid #f3f3f3;
+            border-radius: 5px;
+        }
+        label{
+            position: absolute;
+            padding: 5px;
+        }
+        input:focus{
+
+        }
+    }
+}

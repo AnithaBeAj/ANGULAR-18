@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import {CommonService } from './services/common.service';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ANGULAR-18';
-}
+  }
+
